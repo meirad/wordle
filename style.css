@@ -1,0 +1,86 @@
+html,
+body {
+  text-align: center;
+  background: var(--default);
+  color: #fff;
+  width: 100%;
+}
+
+:root {
+  --default: #121213;
+  --empty: #3a3a3c;
+  --wrong: #b59f3b;
+  --right: #538d4e;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5rem;
+
+  height: 72vh;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--empty);
+  color: white;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  margin-top: 20px;
+  border-top: 10px solid var(--default);
+}
+
+.box.empty {
+  background: var(--empty);
+}
+
+.box.wrong {
+  background: var(--wrong);
+}
+
+.box.right {
+  background: var(--right);
+}
+#message{
+    color: #fff;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    margin: 0 5px;
+  }
+
+#wordInput{
+background-color: #ffffff89;
+width: 150px;
+padding: 10px;
+}
+#guessButton{
+width: 150px;
+padding: 10px;
+
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  gap: 25px;
+}
