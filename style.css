@@ -1,9 +1,9 @@
+
+
 html,
 body {
-  text-align: center;
   background: var(--default);
   color: #fff;
-  width: 100%;
 }
 
 :root {
@@ -22,7 +22,14 @@ body {
   height: 72vh;
 
 }
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
 .grid {
   display: grid;
   grid-template-rows: repeat(6, auto);
@@ -75,12 +82,66 @@ width: 150px;
 padding: 10px;
 
 }
+#startgame{
+background-color: #ffffff89;
+width: 150px;
+padding: 10px;
+}
+
+#instrucsion{
+  display: none;
+}
+#showInstructions{
+  background-color: #ffffff89;
+  width: 150px;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  gap: 25px;
+}
 
 .check {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  gap: 10px;
   width: 100%;
+  margin: auto; /* Center the element */
+}
+
+#Scoreboard{
+  display: flex;
+  flex-direction: column;
+  
+   
   gap: 25px;
+  margin-right: 10px;
+  position: absolute; 
+  right: 5px; 
+  background-color: #ffffff89;
+  padding: 15px;
+  border-radius: 10px;
+}
+p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+::backdrop {
+  background-color: rgba(255, 255, 255, 0.531);
+
+}
+
+#checkInput,
+#reset{
+  background-color: #ffffff89;
+  width: 150px;
+  padding: 10px;
+  
 }

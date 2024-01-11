@@ -10,23 +10,48 @@
 </head>
 
 <body>
+<header> 
     <h1>Wordle</h1>
+    <button id="showInstructions">Show Instructions</button>
+</header>
 
-<div class="check">
-    <label for="wordInput">Enter a Word:</label>
-    <input type="text" id="wordInput">
-    <button id="checkInput" onclick="checkInput()">Guess</button>
-    <button id="reset" onclick="resetGame()">Reset Game</button>
+    <dialog id="instructions">
+        <h1>How To Play</h1>
+        <h3>Guess the Wordle in 6 tries.</h3>
+        <ul>
+          <li>Each guess must be a valid 5-letter word.</li>
+          <li>The color of the tiles will change to show how close your guess was to the word.</li>
+          <li>Example</li>
+          <li>Green means the letter is in the correct position.</li>
+          <li>Yellow means the letter is in the word, but not in the correct position.</li>
+          <li>Gray means the letter is not in the word.</li>
+        </ul>
+        <button id="startgame" >back</button>
+    </dialog>
 
+<div class="container">
+    <div class="check">
+        <label for="wordInput">Enter a Word:</label>
+        <input type="text" id="wordInput">
+        
+        <button id="checkInput" >Guess</button>
+        <button id="reset" >Reset Game</button>
+         <p id="message"></p>
+    </div>
    
 
-</div>
-<p id="message"></p>
-    <div id="game">
-        <div class="grid">
-           
+    <div id="Scoreboard">
+        <div class="Score">
+        <h2>Scoreboard</h2>
+                <p id="wins">Wins:</p>
+            <p id="losses">Losses:</p>
         </div>
     </div>
-    
+</div>
 
+<div id="game">
+        <div class="grid">
+    </div>
+</div>
+ 
 </body>
