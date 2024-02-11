@@ -17,9 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-top: 5rem;
+  margin-top: 0.5rem;
 
-  height: 72vh;
 
 }
 header {
@@ -76,6 +75,7 @@ header {
 background-color: #ffffff89;
 width: 150px;
 padding: 10px;
+
 }
 #guessButton{
 width: 150px;
@@ -105,6 +105,13 @@ padding: 10px;
   gap: 25px;
 }
 
+#wordForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+}
 .check {
   display: flex;
   flex-direction: column;
@@ -118,8 +125,7 @@ padding: 10px;
 #Scoreboard{
   display: flex;
   flex-direction: column;
-  
-   
+
   gap: 25px;
   margin-right: 10px;
   position: absolute; 
@@ -144,4 +150,37 @@ p{
   width: 150px;
   padding: 10px;
   
+}
+
+#reset{
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    flex-direction: column-reverse;
+   
+  
+}
+  #Scoreboard{
+     position: static;
+     width: 300px;
+     height: 100px;
+  }
+  .Score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Score h2{
+  margin-top: 0;
+padding: 0;
+}
+  
+
+  #scoreboard-wins{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }

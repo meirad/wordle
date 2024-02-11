@@ -26,25 +26,29 @@
           <li>Yellow means the letter is in the word, but not in the correct position.</li>
           <li>Gray means the letter is not in the word.</li>
         </ul>
-        <button id="startgame" >back</button>
+        <button id="startgame">back</button>
     </dialog>
 
 <div class="container">
     <div class="check">
-        <label for="wordInput">Enter a Word:</label>
-        <input type="text" id="wordInput">
+        <form id="wordForm">
+        <label for="wordInput" >Enter a Word:</label>
+        <input type="text" id="wordInput" required pattern=".{5,}" title="Please enter a word with exactly 5 letters">
         
-        <button id="checkInput" >Guess</button>
+        <button type="submit" id="checkInput" >Guess</button>
         <button id="reset" >Reset Game</button>
+    </form>
          <p id="message"></p>
+         
     </div>
-   
 
     <div id="Scoreboard">
         <div class="Score">
-        <h2>Scoreboard</h2>
-                <p id="wins">Wins:</p>
-            <p id="losses">Losses:</p>
+            <h2>Scoreboard</h2>
+            <div id="scoreboard-wins">
+                    <p id="wins">Wins:0</p>
+                <p id="losses">Losses:0</p>
+            </div>   
         </div>
     </div>
 </div>
