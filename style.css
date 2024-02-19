@@ -87,6 +87,10 @@ background-color: #ffffff89;
 width: 150px;
 padding: 10px;
 }
+#startgame:hover{
+cursor: pointer;
+}
+
 
 #instrucsion{
   display: none;
